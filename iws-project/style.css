@@ -1,0 +1,32 @@
+body {
+  display: block;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: white;
+}
+
+.navbar-bran img {
+  max-height: 50px;
+}
+.navbar-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #a63aa4;
+  font-weight: 900;
+}
+nav ul li a {
+  color: #a9a9a9;
+}
+/* Hero section */
+
+#hero .col {
+  display: flex;
+  justify-content: center;
+}
+
+#hero img {
+  width: 110%;
+  max-width: 110%;
+}

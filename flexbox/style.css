@@ -1,0 +1,265 @@
+body {
+  margine: 0;
+}
+.container {
+  border: 1px solid black;
+  /* height: 400px; */
+  display: flex;
+  /* display: inline-flex; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-flow: row nowrap; */
+  /* flex-flow: row-reverse wrap; */
+  /* flex-flow: row-reverse wrap-reverse; */
+
+  /* SPACING PROPERTIES */
+  /* row-gap: 50px; */
+  /* column-gap: 20px; */
+
+  /* gap: 50px 40px; */
+
+  /* AIGNMENT PROPERTIES */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: right; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; *
+  /* justify-content: space-evenly; */
+
+  /* ALIGN ITEMS PROPERTIES */
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+
+  /* ALIGN CONTENT PROPERTIES --- It works only when we have multiple rows */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+}
+/* ============================================================== */
+
+.flex-item {
+  color: rgb(41, 39, 39);
+  font-size: 1.5rem;
+  padding: 1rem;
+  /* margin: 5px; */
+  text-align: center;
+  /* position: relative; */
+  /* top: 80px; */
+  /* bottom: 80px; */
+  /* left: 80px; */
+  /* right: 80px; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+
+  /* ============================================================== */
+}
+.item-1 {
+  background-color: rgb(245, 201, 209);
+  /* border: 1px solid black; */
+  /* align-self: flex-start; */
+  /* flex-grow: 1; */
+  flex-basis: 200px;
+}
+.item-2 {
+  background-color: rgb(192, 255, 225);
+  /* border: 1px solid black; */
+  /* padding-bottom: 2rem; */
+  /* align-self: center; */
+  /* flex-shrink: 0; */
+}
+.item-3 {
+  background-color: rgb(196, 192, 255);
+  /* border: 1px solid black; */
+  /* padding-bottom: 8rem; */
+  /* align-self: flex-end; */
+  /* order: 1; */
+}
+.item-4 {
+  background-color: rgb(183, 80, 162);
+  /* border: 1px solid black; */
+  /* padding-bottom: 5rem; */
+  /* align-self: stretch; */
+}
+.item-5 {
+  background-color: rgb(201, 79, 38);
+  /* border: 1px solid black; */
+  /* padding-bottom: 4rem; */
+  /* align-self: baseline; */
+  /* flex-grow: 1; */
+}
+.item-6 {
+  background-color: rgb(237, 39, 72);
+  /* border: 1px solid black; */
+  /* flex-grow: 3; */
+}
+.item-7 {
+  background-color: rgb(66, 27, 208);
+  /* border: 1px solid black; */
+  /* order: 2; */
+  /* flex-grow: 5; */
+}
+.item-8 {
+  background-color: rgb(28, 189, 33);
+  /* border: 1px solid black; */
+  /* order: 1; */
+}
+.item-9 {
+  background-color: rgb(229, 255, 0);
+  /* border: 1px solid black; */
+  /* order: 2; */
+}
+
+/* ======================= GRID ================================ */
+
+.grid-container {
+  border: 6px solid black;
+  display: grid;
+  height: 600px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+
+  /* display: inline-grid; */
+  /* grid-template-columns: 100px 200px 300px; */
+  /* grid-template-columns: repeat(3, 200px); */
+  /* grid-template-columns: 1fr 2fr 3fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+
+  /* grid-template-rows: 100px 75px 200px; */
+  /* grid-template-rows: repeat(3, 200px) 100px; */
+  /* grid-template-rows: 1fr 2fr 1fr; */
+  /* grid-template-rows: repeat(3, minmax(250px, 1fr)); */
+  /* grid-template: repeat(3, 1fr) / repeat(3, minmax(200px, 400px)); */
+  /* grid-template: repeat(3, 100px) / repeat(3, minmax(200px, 400px)); */
+  /* grid-template: repeat(3, 1fr) / repeat(3, 2fr); */
+  /* column-gap: 20px; */
+  /* row-gap: 30px; */
+  /* gap: 30px 20px; */
+  /* justify-items: start; */
+  /* justify-items: end; */
+  /* justify-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* place-items: center start; */
+  /* place-items: end end; */
+  /* place-items: start start; */
+  /* place-items: start start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* place-content: start end; */
+  /* place-content: space-evenly space-evenly; */
+  /* grid-auto-flow: row; */
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: 100px; */
+  /* grid-template-rows: 50px; */
+
+  grid-template-columns: [grid-start content-start] 1fr 1fr[content-end] 1fr [grid-end];
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-auto-rows: 150px;
+
+  grid-template-areas: "h h h" "m m p2" "m m p1" "f f f"
+
+  /* ============================================================== */
+
+  grid: ;
+  grid-template-areas: ;
+}
+
+/* ============================================================== */
+
+.grid-item {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ============================================================== */
+
+.item-10 {
+  background-color: rgb(245, 201, 209);
+  /* border: 1px solid black; */
+  /* align-self: flex-start; */
+  /* flex-grow: 1; */
+  /* flex-basis: 200px; */
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+  /* grid-column: 1 / span 3; */
+  /* grid-row: 1/3; */
+  /* grid-column: grid-start/grid-end; */
+  /* grid-area: h; */
+  
+}
+.item-11 {
+  background-color: rgb(192, 255, 225);
+  /* border: 1px solid black; */
+  /* padding-bottom: 2rem; */
+  /* align-self: center; */
+  /* flex-shrink: 0; */
+  /* grid-column-start: 1 */
+  /* grid-column-end: 4; */
+  /* grid-column: 1/4; */
+  /* grid-row: 2/5; */
+}
+.item-12 {
+  background-color: rgb(196, 192, 255);
+  /* border: 1px solid black; */
+  /* padding-bottom: 8rem; */
+  /* align-self: flex-end; */
+  /* order: 1; */
+  /* grid-column: 2 / span 2; */
+}
+.item-13 {
+  background-color: rgb(183, 80, 162);
+  /* border: 1px solid black; */
+  /* padding-bottom: 5rem; */
+  /* align-self: stretch; */
+  /* justify-self: center; */
+  /* align-self: center; */
+  place-self: start end;
+}
+.item-14 {
+  background-color: rgb(201, 79, 38);
+  /* border: 1px solid black; */
+  /* padding-bottom: 4rem; */
+  /* align-self: baseline; */
+  /* flex-grow: 1; */
+  /* grid-row: 3 / span 3; */
+}
+.item-15 {
+  background-color: rgb(237, 39, 72);
+  /* border: 1px solid black; */
+  /* flex-grow: 3; */
+}
+.item-16 {
+  background-color: rgb(66, 27, 208);
+  /* border: 1px solid black; */
+  /* order: 2; */
+  /* flex-grow: 5; */
+}
+.item-17 {
+  background-color: rgb(28, 189, 33);
+  /* border: 1px solid black; */
+  /* order: 1; */
+}
+.item-18 {
+  background-color: rgb(229, 255, 0);
+  /* border: 1px solid black; */
+  /* order: 2; */
+  /* grid-column: -4/-1; */
+}

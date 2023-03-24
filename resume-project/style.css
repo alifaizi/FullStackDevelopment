@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* ==================== Left side inner container */
+
+.container .left-side {
+  position: relative;
+  background-color: #003147;
+  padding: 40px;
+}
+.profile-text-and-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile-text-and-image .imgBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-text-and-image .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ==================== Style name and tite ========================== */
+
+.profile-text-and-image h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile-text-and-image h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+/* =============== Style Contact Info Section ========================= */
+
+.contact-info {
+  padding-top: 40px;
+}
+.title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contact-info ul {
+  position: relative;
+}
+.contact-info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact-info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contact-info ul li span {
+  color: white;
+  font-weight: 300;
+}
+.contact-info.education li {
+  margin-bottom: 15px;
+}
+.contact-info.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contact-info.education h4:nth-child(2) {
+  color: white;
+  font-weight: 500;
+}
+.contact-info.education h4 {
+  color: white;
+  font-weight: 300;
+}
+
+/* ======================= Language Section ============  */
+
+.contact-info.languages .percent-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #081921;
+  margin-top: 5px;
+}
+.contact-info.languages .percent-bar div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+.container .right-side {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+/* ============== Right Side ================== */
+
+.about {
+  margin-bottom: 40px;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #333;
+}
+.about .box {
+  display: flex;
+  margin: 20px;
+}
+.about .box .year-company {
+  min-width: 150px;
+}
+
+.about .box .year-company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+/* =========== Professional Section ===========================*/
+
+.skills .box {
+  display: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+  transition: width 0.5s ease-in-out;
+}
+
+/* ======== Interest Section ======== */
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa-solid {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+/* ========= Media Query: Changing the screen to tablet============ */
+@media (max-width: 1023px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .interest ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year-company {
+    margin: 5px;
+  }
+}
+
+/* ========== Mobile Phone ========== */
+
+@media (max-width: 768px) {
+  .interest ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year-company {
+    margin: 5px;
+  }
+  .skills .box {
+    grid-template-columns: 1fr;
+  }
+}

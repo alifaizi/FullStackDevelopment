@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Element</title>
+  </head>
+  <body>
+    <h2>Form and Form Elements</h2>
+    <hr />
+    <form
+      action="submitted-form-info.html"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <h3>Personal Details:</h3>
+      <div>
+        <!-- Highlighting the input field by clicking on it is lable, first Way  -->
+        <!-- This one is more common practice -->
+
+        <!-- Creating simple text box -->
+
+        <label for="name">User Name:</label>
+        <input
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Enter user name"
+          value=""
+          required
+        />
+      </div>
+
+      <!-- Creating email input -->
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <!-- Creating password -->
+
+      <div>
+        <!-- Highlighting the input field by clicking on it is lable, Second Way  -->
+
+        <label
+          >Password:
+          <input
+            name="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Creating numbers only textbox -->
+
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Enter age"
+          min="1"
+          max="150"
+          step="2"
+        />
+      </div>
+
+      <!-- Creating Date input -->
+
+      <div>
+        <label for="date">Date of Birth:</label>
+        <input
+          for="dob"
+          type="date"
+          min="1985-01-01"
+          placeholder="mm/dd/yyyy"
+        />
+      </div>
+
+      <!-- Creating a phone field -->
+
+      <div>
+        <label for="phone">Enter Phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter phone number"
+        />
+      </div>
+
+      <!-- Creating website input filed -->
+
+      <div>
+        <label for="url">Enter your website</label>
+        <input
+          type="url"
+          name="web address"
+          id="url"
+          placeholder="Enter your website"
+        />
+      </div>
+      <hr />
+
+      <!-- creating color picker -->
+
+      <div>
+        <label for="color">Pick your favourit color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+
+      <!-- Creating Checkbox -->
+
+      <hr />
+      <h3>Favourite Sports:</h3>
+      <div>
+        <label for="soccer">Soccer</label>
+        <input type="checkbox" name="soccer" id="soccer" value="Soccer" />
+      </div>
+      <div>
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" name="tennis" id="tennis" value="Tennis" />
+      </div>
+      <div>
+        <label for="buz-kashi">Buz Kashi</label>
+        <input
+          type="checkbox"
+          name="buz-kashi"
+          id="buz-kashi"
+          value="buz-kashi"
+        />
+      </div>
+      <hr />
+
+      <!-- Creating Radio Buttons -->
+
+      <h3>Preferred Contact Method:</h3>
+      <div>
+        <label for="phone">Phone: </label>
+        <input type="radio" name="contact" id="phone" value="phone" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="radio" name="contact" id="email" value="email" />
+      </div>
+      <div>
+        <label for="postal" Postal>Postal</label>
+        <input type="radio" name="contact" id="postal" />
+      </div>
+      <hr />
+
+      <!-- Select Element Drop Down menu -->
+
+      <h3>Dropdown Menu:</h3>
+      <div>
+        <label for="vehicle">Vehicle Type:</label>
+        <select name="vehicle" id="vehicle">
+          <!-- <select name="vehicle" id="vehicle" multiple> -->
+          <option>Select your vehicle type</option>
+          <option value="car">Car</option>
+          <option value="bike">Bike</option>
+          <option value="track">Truck</option>
+          <option value="bus">Bus</option>
+          <option value="metro">Metro</option>
+          <!-- <option label="Bike" value="bike"></option> -->
+        </select>
+      </div>
+      <hr />
+
+      <!-- Uploading files from local machine into the server -->
+
+      <h3>File Upload:</h3>
+      <div>
+        <label for="file">Upload File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+
+      <hr />
+
+      <!-- Adding text area for multiple lines -->
+
+      <h3>Multi-line textbox:</h3>
+      <div>
+        <label for="bio">Biography</label>
+        <textarea
+          name="bio"
+          id="bio"
+          cols="50"
+          rows="2"
+          placeholder="Write something about yourself"
+        ></textarea>
+      </div>
+
+      <hr />
+
+      <!-- Creating buttons -->
+
+      <h3>Buttons:</h3>
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <hr />
+
+    <!-- Creating Table With Row Span -->
+
+    <h3>HTML Tables With Row Span</h3>
+    <table border="1">
+      <tr>
+        <th>Mobile Devices</th>
+        <th>Operating System</th>
+        <th>Screen Size</th>
+        <th>RAM</th>
+      </tr>
+      <tr>
+        <td>Samsung Galaxy</td>
+        <td rowspan="2">Android</td>
+        <td>5.5"</td>
+        <td>6GB</td>
+      </tr>
+      <tr>
+        <td>Sony XPeria</td>
+        <td>6"</td>
+        <td>16GB</td>
+      </tr>
+      <td>iPhone</td>
+      <td>iOS</td>
+      <td>7.5"</td>
+      <td>12GB</td>
+    </table>
+
+    <hr />
+
+    <!-- Creating Table With Column Span -->
+
+    <h3>HTML Tables With Column Span</h3>
+    <table border="1">
+      <tr>
+        <th>Year/Quarter</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td colspan="2">Laptop</td>
+        <!-- <td>Laptop</td> -->
+        <td>Speakers</td>
+        <td>Mobiles</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td>RAM</td>
+        <td>Keyboard</td>
+        <td>Keyboard</td>
+        <td>Keyboard</td>
+      </tr>
+      <td>2018</td>
+      <td>Speaker</td>
+      <td>Speaker</td>
+      <td>Mobile</td>
+      <td>Mobile</td>
+    </table>
+
+    <hr />
+
+    <!-- Table with cell padding and cell spacing, Table head, body, and footer -->
+
+    <h3>Table Header, Table Body and Table Footer</h3>
+    <table border="1" cellpadding="20" cellspacing="10">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Saving</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>450</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>February</td>
+          <td>550</td>
+        </tr>
+        <tr>
+          <td colspan="2">Saved more in February</td>
+          <!-- <td>450</td> -->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

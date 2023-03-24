@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--This is a BOILER PLATE-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- -------------------------------------------------------------- -->
+    <!-- Embeded Styling or internal CSS -->
+    <style type="text/css">
+      /* p {
+        color: blue;
+        font-size: larger;
+        background-color: dimgray;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      } */
+      /* ----------------------------------------------------------------------------- */
+      /* .html-info is a class element */
+      .html-info {
+        color: white;
+        background-color: chocolate;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .head-info {
+        color: red;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .text {
+        color: darkgreen;
+      }
+      .emphsize-word {
+        color: red;
+        font-family: "Times New Roman", Times, serif;
+      }
+      h2 {
+        color: brown;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: oblique;
+      }
+      /* Bold and italic styles are coming from ID attribute */
+      #paragraph-3 {
+        font-style: italic;
+        font-weight: bold;
+      }
+      /* Bacground color  is coming form class attribute*/
+      .attributes-info {
+        background-color: cadetblue;
+      }
+      span {
+        background-color: yellow;
+        font-stretch: extra-condensed;
+        color: black;
+      }
+    </style>
+  </head>
+  <!-- ------------------------------------------------------------------------ -->
+  <body>
+    <marquee behavior="scroll" direction=""
+      >This is my <em><strong>first webpage</strong></em></marquee
+    >
+    <hr width="100%" align="left" noshade />
+    <h4>Contact Us</h4>
+    <hr width="50%" noshade size="5" />
+    <!-- We have 2 types of elements -->
+    <!-- Block level element and Inline elements -->
+    <h2 align="center">Block Level <span>Elements</span></h2>
+    <h3>HTML:</h3>
+    <!-- ----------------------------------------------------------------- -->
+    <p title="This is a paragraph about HTML" class="html-info">
+      Covers the absolute basics of HTML, to get you started — we define
+      elements, attributes, and other important terms, and show where they fit
+      in the language. We also show how a typical HTML page is structured and
+      how an HTML element is structured, and explain other important basic
+      language features. Along the way, we'll play with some HTML to get you
+      interested!
+    </p>
+    <h3>Head:</h3>
+    <!-- Text in the class value is an additional class because it has space before -->
+    <p title="This is a paragraph about Head" class="head-info text">
+      The head of an HTML document is the part that is not displayed in the web
+      browser when the page is loaded. It contains information such as the page
+      title, links to CSS (if you want to style your HTML content with CSS),
+      links to custom favicons, and metadata (data about the HTML, such as who
+      wrote it, and important keywords that describe the document).
+    </p>
+    <hr />
+    <h3>Attributes in HTML:</h3>
+    <p
+      title="This a paragraph about HTML attributes"
+      id="paragraph-3"
+      class="attributes-info"
+    >
+      Attributes contain extra information about the element that won't appear
+      in the content. In this example, the class attribute is an identifying
+      name used to target the element with style information.
+    </p>
+    <h4>An attribute should have the following:</h4>
+    <ul>
+      <li>
+        A space between it and the element name. (For an element with more than
+        one attribute, the attributes should be separated by spaces too.)
+      </li>
+      <li>The attribute name, followed by an equal sign.</li>
+      <li>An attribute value, wrapped with opening and closing quote marks.</li>
+    </ul>
+    <!-- ---------------------------------------------------- -->
+    <hr />
+    <!-- br is line break - Line break tag practice -->
+    <p id="paragraph-3">
+      Regards, <br />Ali Faizi, <br />Fullstack Software Developer
+    </p>
+
+    <!-- ---------------------------------------------------- -->
+    <hr />
+    <!-- Lists -->
+    <!-- We have 2 types of lists -->
+    <!-- ordered List: Stats with numbers 1, 2, 3, 4 -->
+    <!-- unordered list: It is without numbers. It is only with bullet points -->
+    <h3>List Types</h3>
+    <h4>Unordered List:</h4>
+    <!-- ---------------------------------------------------------- -->
+    <ul type="square" title="This is an unordered list">
+      <!-- ul stands for unordered list -->
+      <li>It is unordered list 1</li>
+      <li>It is unordered list 2</li>
+      <ul>
+        <li type="a">This is sub-unordered list 1</li>
+        <li>This is sub-unordered list 2</li>
+        <li>This is sub-unordered list 3</li>
+      </ul>
+      <!-- li stands for list-->
+      <li>It is unordered list 3</li>
+    </ul>
+    <!-- ------------------------------------------------------------------ -->
+    <hr />
+    <h4>Ordered list:</h4>
+    <ol title="This is an ordered list">
+      <!-- ol stands for ordered list -->
+      <li>This is ordered list 1</li>
+      <li>This is ordered list 2</li>
+      <ol start="10">
+        <!-- Start attribute changes the number bullets of order list -->
+        <li>This is sub-ordered list 1</li>
+        <li value="5">This is sub-ordered list 2</li>
+        <!-- value attribute changes the bullet number of a specific item -->
+        <li>This is sub-ordered list 3</li>
+      </ol>
+      <li>This is ordered list 3</li>
+    </ol>
+    <!-- --------------------------------------------------------------------- -->
+    <hr />
+    <h3>Inline Elements</h3>
+    <p>
+      Sometime we need to <em class="emphsize-word">emphasize</em> something
+    </p>
+    <!-- em makes the element italic -->
+    <p>I want to make the <strong>text </strong>bolder</p>
+    <!-- strong makes the element bold -->
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- External Links: absolute path-->
+
+    <h2>Linking to external website</h2>
+    <a href="https://www.google.com" target="_blank">Search with google</a>
+    <!-- ------------------------------------------------------------------- -->
+
+    <!-- Internal Links: Relative path -->
+    <!-- Same Directory -->
+
+    <ul>
+      <li><a href="../about-us/about-us.html" target="_self">About us</a></li>
+
+      <!-- Sub Directory -->
+
+      <li>
+        <a href="../contact-us/contact-us.html" target="_self">Contact us</a>
+      </li>
+
+      <!-- Different Directory -->
+
+      <li><a href="../FAQ/faq.html" target="_self">FAQs</a></li>
+
+      <li><a href="../image.html" target="_self">Image Gallery</a></li>
+      <li><a href="../div.html" target="_self">div page</a></li>
+    </ul>
+  </body>
+</html>

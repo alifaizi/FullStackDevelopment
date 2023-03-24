@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-bg-color">
+    <header class="main-header">
+      <h1 class="indent-text-h1">Welcome</h1>
+      <h2 class="indent-text-h2-large indent-text-h2-small">
+        Never Stop Learning
+      </h2>
+      <br />
+      <br />
+      <p id="time" class="date-time"></p>
+      <script>
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+        var day = currentTime.getDate();
+        var month = currentTime.getMonth() + 1;
+        var year = currentTime.getFullYear();
+        if (minutes < 10) {
+          minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+          seconds = "0" + seconds;
+        }
+        document.getElementById("time").innerHTML =
+          day +
+          "/" +
+          month +
+          "/" +
+          year +
+          " " +
+          hours +
+          ":" +
+          minutes +
+          ":" +
+          seconds;
+        setInterval(displayTime, 1000);
+      </script>
+      <br />
+    </header>
+    <br />
+
+    <!-- Wrapper Container Tags -->
+
+    <form
+      action="submitted-form-info.html"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <table
+        class="table-properties"
+        border="0.5"
+        cellpadding="10"
+        cellspacing="5"
+        align="center"
+      >
+        <thead class="table-head">
+          <th colspan="2" class="thead-text">Registration Form</th>
+        </thead>
+
+        <tbody>
+          <!-- First Name -->
+
+          <tr>
+            <td rowspan="2">
+              <!-- First cell of first first raw -->
+              Full Name
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input type="text" name="firstname" placeholder="First Name" />
+              (Max 50 Charachters Allowed)
+            </td>
+          </tr>
+
+          <!-- Last Name -->
+
+          <tr>
+            <!-- <td> -->
+            <!-- First cell of first first raw -->
+            <!-- Last Name -->
+            <!-- </td> -->
+
+            <td>
+              <!-- Second cell of first raw -->
+              <input type="text" name="lastname" placeholder="Last Name" />
+              (Max 50 Charachters Allowed)
+            </td>
+          </tr>
+
+          <!-- Email -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Email Id
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter email address"
+              />
+            </td>
+          </tr>
+
+          <!-- Mobile -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Mobile Number
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your mobile number"
+              />
+              (10 Digits Allowed)
+            </td>
+          </tr>
+
+          <!-- Gender Dropdown Menu -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Gender
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <select name="gender" id="gender">
+                <option>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Date of birth -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Date of Birth
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input type="date" name="dob" min="2000-06-1" />
+            </td>
+          </tr>
+
+          <!-- Multilines Text Area -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Address
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <textarea
+                rows="10"
+                cols="50"
+                name="address"
+                placeholder="Enter your address: Max 250 Charachters Allowed"
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- Hobbies Checkbox -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Hobbies
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input type="checkbox" value="drawing" name="drawing" />
+              Drawing
+              <input type="checkbox" value="singing" name="singing" />
+              Singing
+              <input type="checkbox" value="dancing" name="dancing" />
+              Dancing
+              <input type="checkbox" value="Skechting" name="sketching" />
+              Sketchning
+              <input type="checkbox" value="other" name="other" />
+              Other
+              <input
+                type="text"
+                name="other-hobby"
+                placeholder="Other Hobbies"
+              />
+              (Max 50 Characters Allowed)
+            </td>
+          </tr>
+
+          <!--  Radio Button -->
+
+          <tr>
+            <td>
+              <!-- First cell of first first raw -->
+              Courses Applied For
+            </td>
+            <td>
+              <!-- Second cell of first raw -->
+              <input type="radio" value="fullstack" name="course" />
+              Fullstack Web Development
+              <br />
+              <input type="radio" value="singing" name="course" />
+              Data Analytics
+              <br />
+              <input type="radio" value="dancing" name="course" />
+              Internet Security & Networking
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <!--   Buttons -->
+
+          <tr>
+            <td colspan="2" align="center">
+              <!-- We need one raw -->
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </form>
+  </body>
+</html>

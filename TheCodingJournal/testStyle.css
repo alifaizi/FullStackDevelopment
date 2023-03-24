@@ -1,0 +1,39 @@
+.first-para {
+  border-width: 10px thick 3px thin;
+  border-style: outset dotted solid dashed;
+  border-color: #00ffff;
+}
+
+/* Shorthand syntax */
+
+.first-para {
+  border: 3px dotted #db1616;
+}
+p:nth-child(even) {
+  font-weight: bold;
+  background-color: #db1616;
+  color: blue;
+}
+
+/* Pseudo Class: Help us target elements without  adding class attributes to many elements/tags*/
+
+li:first-child {
+  color: red;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(odd) {
+  background-color: burlywood;
+}
+a:link {
+  color: royalblue;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  font-weight: bold;
+  background-color: blueviolet;
+}

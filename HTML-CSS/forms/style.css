@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+}
+
+.main-header {
+  background-color: rgb(154, 189, 207);
+  background-image: url(/images/high-res1.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-image: center;
+}
+.indent-text-h1 {
+  text-align: center;
+  text-indent: 20px;
+  font-size: 0.5;
+  padding-top: 20px;
+  color: rgb(182, 177, 175);
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.indent-text-h2-large {
+  text-align: center;
+  color: rgb(152, 30, 12);
+  padding-top: 0%;
+  font-size: 2em;
+  margin: 0;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.date-time {
+  text-align: center;
+  color: beige;
+  font-size: large;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: ultra-expanded;
+  font-kerning: normal;
+  text-shadow: rgb(22, 22, 22);
+  text-decoration: dashed;
+}
+.table-head {
+}
+.thead-text {
+  font-size: xx-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.body-bg-color {
+  background-color: rgb(39, 39, 40);
+}
+.table-properties {
+  border: 0.5px;
+}
