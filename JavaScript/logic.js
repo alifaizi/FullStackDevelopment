@@ -1450,3 +1450,30 @@ let buttonEvent2 = document.getElementById("paraOne");
 function mouseHoverOver() {
   console.log("This is Mouse Hover Over event");
 }
+
+// ====================  PRACTICE ===============================
+
+// ====================  Destructuring Arrays ===============================
+
+let myCompleteName = ["Rahul", 25, "Cycling"];
+let [completname, myRealAge, hobby] = myCompleteName;
+console.log(completname, myRealAge, hobby);
+
+console.log("================================================================");
+
+const names = "alice";
+const num = 1;
+
+function greeting(name, num) {
+  // Capitalize the first letter of name
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+
+  if (num === 1) {
+    return "Hello " + name;
+  } else {
+    return "Bye " + name;
+  }
+}
+
+const message = greeting(names, num);
+console.log(message); // Output: "Hello Alice"
